@@ -1,0 +1,104 @@
+:root{
+  --danger-color : #dc3545;
+}
+
+#header{
+  position: sticky ;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
+}
+#header a{
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+}
+#header a:hover{
+  color: var(--danger-color);
+  transition: 0.5s;
+}
+#header button{
+  font-size: 20px;
+}
+.btn-1:hover{
+  color: var(--danger-color);
+  text-shadow: 0 0 22px -10px var(--danger-color);
+  transition: 0.5s;
+}
+.btn-2{
+  color: var(--danger-color);
+  border-radius: 25px;
+  
+}
+.btn-2:hover{
+  color: white;
+  background-color:var(--danger-color);
+  transition: 1s;
+}
+.main button{
+  box-shadow: 0 1px 10px 0 var(--danger-color);
+}
+.main{
+  font-size: 1rem;
+}
+.div_line{
+  position: relative;
+}
+.div_line::after{
+  content: '';
+  width: 1px;
+  height: 80%;
+  background-color: black;
+  position: absolute;
+  right: 0px;
+  opacity: 0.1;
+
+}
+@media (max-width: 768px){
+  .div_line::after{
+    transform: rotate(90deg);
+    bottom: 0px;
+    top: 50%;
+    left: 50%;
+    height:  100%;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.footer_float{
+  top: -100px;
+  box-shadow:0px 0px 30px -10px #6c757d;
+}
+.btn-3{
+  box-shadow: 0px 0px 20px 0px #f53838;
+  background-color: #f53838;
+}
+.btn-3:hover{
+  opacity: 0.9;
+}
+.footer_icon{
+  border: 1px solid var(--danger-color);
+  box-shadow: 0 0 22px -10px var(--danger-color);
+  width: 50px;
+  height: 50px;
+}
+.footer_icon:hover{
+  position: relative;
+  bottom: 10px;
+}
+@media (max-width: 720px){
+  .footer_icon{
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+  }
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+html{
+  scroll-behavior: smooth;
+}
